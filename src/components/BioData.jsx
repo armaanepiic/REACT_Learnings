@@ -1,18 +1,19 @@
+
 const Biodata = (obj) => {
-    console.log(obj);
+    const { name, age, mobile, location, occupation, skills, interests } = obj;
   return (
     <div className="biodata">
-      <h1>Biodata of {obj.name}</h1>
+      <h1>Biodata of {name}</h1>
       <div className="personal-info">
-        <p>Age: {obj.age} </p>
-        <p>Occupation: {obj.occupation}</p>
-        {obj.mobile && <p>Mobile: {obj.mobile}</p>}
-        {obj.location && <p>Location: {obj.location}</p>}
+        <p>Age: {age} </p>
+        <p>Occupation: {occupation}</p>
+        {mobile && <p>Mobile: {mobile}</p>}
+        {location && <p>Location: {location}</p>}
       </div>
       <div className="skills">
         <h3>My Skills</h3>
         <ul>
-          {obj?.skills?.map((skill) => (
+          {skills?.map((skill) => (
             <li key={skill}>{skill}</li>
           ))}
         </ul>
@@ -20,7 +21,7 @@ const Biodata = (obj) => {
       <div className="interest">
         <h3>My Interest</h3>
         <ul>
-          {obj?.interests?.map((interest) => (
+          {interests?.map((interest) => (
             <li key={interest}>{interest}</li>
           ))}
         </ul>
