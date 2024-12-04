@@ -1,36 +1,28 @@
-
 import "./App.css"
 import Biodata from "./components/BioData";
+
 function App() {
 
   return (
     <div className="App">
-      <div className="biodata">
-        <h1>Arman Hossain</h1>
-        <div className="personal-info">
-          <p>Age: 27</p>
-          <p>Occupation: Web Developer</p>
-          <p>Location: Chattogram, Bangladesh</p>
-        </div>
-        <div className="skills">
-          <h3>My Skills</h3>
-          <ul>
-            <li>C++</li>
-            <li>Javascript</li>
-            <li>React</li>
-          </ul>
-        </div>
-        <div className="interest">
-          <h3>My Interest</h3>
-          <ul>
-            <li>Cycling</li>
-            <li>Swimming</li>
-            <li>Travelling</li>
-          </ul>
-        </div>
-      </div>
+      <Biodata
+        name="Arman"
+        age={27}
+        occupation="Software Engineer"
+        location="Oxigen, chattogram, Bangladesh"
+        mobile= "01874015451"
+        skills={["React", "C++", "Javascript"]}
+        interests={["Playing Games", "Travelling", "swimming"]}
+      />
       <hr />
-      <Biodata />
+      <Biodata
+        name="Nusrat"
+        age={25}
+        occupation="UI/UX Designer"
+        location= "Sitakund, Chattogram, Bangladesh"
+        skills={["Canva", "Figma", "Adobe"]}
+        interests={["Reading", "Watching movie", "Travelling"]}
+      />
     </div>
   );
 }
