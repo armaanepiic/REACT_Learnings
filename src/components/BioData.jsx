@@ -1,6 +1,5 @@
 const Biodata = (obj) => {
     console.log(obj);
-    
   return (
     <div className="biodata">
       <h1>Biodata of {obj.name}</h1>
