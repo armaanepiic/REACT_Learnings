@@ -12,7 +12,7 @@ function App() {
         location="Oxigen, chattogram, Bangladesh"
         mobile= "01874015451"
         skills={["React", "C++", "Javascript"]}
-        interests={["Playing Games", "Travelling", "swimming"]}
+        interests={["Playing Games", "Travelling", "Swimming"]}
       />
       <hr />
       <Biodata
