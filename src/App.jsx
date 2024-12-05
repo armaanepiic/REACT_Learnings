@@ -4,7 +4,7 @@ function Item({ name, isPacked }) {
   if (isPacked) {
     // return <li className="item">{name} ✅</li>;
     // if i dont want to show this message
-    return null;
+    return null; 
   }
   else
     return <li className="item">{name}</li>;
