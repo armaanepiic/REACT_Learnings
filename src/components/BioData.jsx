@@ -1,18 +1,19 @@
 export default function BioData(obj) {
-    console.log(obj);
+  const {name, age, occupation,contact, skills, interests} = obj;
+  console.log(obj);
     
   return (
     <div>
-      <h1>Biodata of {obj.name} </h1>
-      <div className="personal-info {obj.name}">
-        <p>Age: {obj.age}</p>
-        <p>Occupation: {obj.occupation}</p>
-        {obj.contact && <p>Contact: {obj.contact}</p>}
+      <h1>Biodata of {name} </h1>
+      <div className="personal-info {name}">
+        <p>Age: {age}</p>
+        <p>Occupation: {occupation}</p>
+        {contact && <p>Contact: {contact}</p>}
       </div>
       <div className="skills">
         <h2>My Skills:</h2>
         <ul>
-          {obj?.skills?.map((skill) => (
+          {skills?.map((skill) => (
             <li key={skill}>{skill}</li>
           ))}
         </ul>
@@ -20,7 +21,7 @@ export default function BioData(obj) {
       <div className="interests">
         <h2>My Interest:</h2>
         <ul>
-          {obj?.interests?.map((interest) => (
+          {interests?.map((interest) => (
             <li key={interest}>{interest}</li>
           ))}
         </ul>
