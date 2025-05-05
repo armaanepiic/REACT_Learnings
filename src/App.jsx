@@ -1,18 +1,3 @@
-import Profile from "./components/Profile";
-import './App.css'
-
-export default function App() {
-  return (
-    <div style={{background:'black', color: 'white'}}>
-      <h3>Favourite Fruits:</h3>
-      <ul>
-        <li>Apple</li>
-        <li>Orange</li>
-        <li>Banana</li>
-      </ul>
-    </div>
-  );
-}
 
 
 
