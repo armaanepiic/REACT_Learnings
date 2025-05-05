@@ -1,6 +1,14 @@
-
-.personal-info{
-  border: 1px solid rebeccapurple;
-  padding: 5px 10px;
-  background:skyblue;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100px;
+    border-radius: 50%;
+}
+.portfolio{
+    padding: 15px 30px;
+    background: black;
+    color: white;
 }

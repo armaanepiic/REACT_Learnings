@@ -1,28 +1,53 @@
+import Profile from "./components/Profile";
 import './App.css'
-import BioData from './components/BioData';
-function App() {
-  console.log("I am running");
-
+const person = {
+  name: 'Arman',
+  theme: {
+    background: 'black',
+    color: 'white',
+  }
+}
+export default function App() {
   return (
-    <div className="app">
-      <BioData
-        name="Arman"
-        age={28}
-        occupation="Software Developer"
-        skills={["React", "NextJS", "NodeJS"]}
-        interests={["Cycling", "Swimming", "Travelling"]}
-      />
-      <hr />
-      <BioData
-        name="Nusrat"
-        age={26}
-        occupation="UI UX Designer"
-        contact="+8801874015451"
-        skills={["Figma", "Canva", "Adobe"]}
-        interests={["Shopping", "Reading", "Travelling"]}
-      />
+    <div className="portfolio">
+      <h1>{person.name}'s Portfolio</h1>
+      <Profile/>
+      <h3>Interests:</h3>
+      <ul>
+        <li>Shopping</li>
+        <li>Reading</li>
+        <li>Travelling</li>
+      </ul>
     </div>
   );
 }
 
-export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import Profile from "./components/Profile";
+// import './App.css'
+
+// export default function App() {
+//   return (
+//     <section>
+//       <h1>Hill Pictures</h1>
+//       <Profile />
+//       <Profile />
+//       <Profile />
+//     </section>
+//   );
+// }
