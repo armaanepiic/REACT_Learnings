@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { AddTask } from "./components/AddTask";
-import { TaskList } from "./components/TaskList";
-import { initialTasks } from "./data/initialTasks";
-
+import AddTask from "./components/AddTask";
+import TaskList from "./components/TaskList";
+import { initialTasks } from './data/initialTasks';
 let nextId = 4;
-
 export default function App() {
+
   const [tasks, setTasks] = useState(initialTasks);
+  
   const handleChangeTask = (task) => {
     const changedTasks = tasks.map((t) => {
       if (t.id === task.id) {
@@ -40,7 +40,7 @@ export default function App() {
       <h1>Simple Todo App</h1>
       <AddTask onAddTask={handleAddTask} />
       <TaskList
-        tasks={tasks}
+        tasks = {tasks}
         onChangeTask={handleChangeTask}
         onDeleteTask={handleDeleteTask}
       />
