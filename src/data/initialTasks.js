@@ -10,7 +10,7 @@ export const initialTasks = [
     done: true,
   },
   {
-    id: 1,
+    id: 3,
     text: "Learn JS",
     done: false,
   }
