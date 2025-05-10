@@ -1,6 +1,7 @@
 import Counter from './components/Counter';
 import InputField from './components/InputField';
 import Text from './components/Text';
+import SetBg from "./components/SetBg";
 
 
 
@@ -9,7 +10,8 @@ export default function App() {
     <div>
       <Counter />
       <InputField />
-      <Text/>
+      <Text />
+      <SetBg />
     </div>
   );
 }
