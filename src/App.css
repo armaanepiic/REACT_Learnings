@@ -3,3 +3,28 @@
     margin: 0;
     padding: 0;
 }
+.heading{
+    text-align: center;
+    color: blueviolet;
+}
+.counter{
+    border: 2px solid gray;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.count-value{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(147, 41, 147);
+    color: #fff;
+}
