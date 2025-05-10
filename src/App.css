@@ -7,7 +7,7 @@
     text-align: center;
     color: blueviolet;
 }
-.counter{
+.component{
     border: 2px solid gray;
     padding: 15px;
     display: flex;
@@ -40,4 +40,8 @@ button{
     border: 1px solid brown;
     padding: 5px 10px;
     border-radius: 5px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
 }

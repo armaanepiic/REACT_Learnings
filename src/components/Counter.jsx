@@ -15,7 +15,7 @@ export default function Counter() {
   return (
     <div>
       <h1 className="heading">useState</h1>
-      <div className="counter">
+      <div className="component">
         <p className="heading">
           <strong>Counter App :</strong>
         </p>
