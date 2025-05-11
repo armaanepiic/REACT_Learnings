@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../App.css";
-
 export default function InputField() {
   const [name, setName] = useState("");
   return (

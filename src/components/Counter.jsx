@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../App.css";
+import '../App.css'
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -14,7 +14,6 @@ export default function Counter() {
     }
   return (
     <div>
-      <h1 className="heading">useState</h1>
       <div className="component">
         <p className="heading">
           <strong>Counter App :</strong>

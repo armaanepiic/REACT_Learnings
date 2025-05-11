@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "../App.css";
 export default function Text() {
   const [isVisible, setIsVisible] = useState(true);
   const handleClick = () => {
@@ -8,9 +8,7 @@ export default function Text() {
   return (
     <div className="component text">
       {isVisible && <p>Hello!!!!</p>}
-      <button onClick={handleClick}>
-        {isVisible ? "Hide" : "Show"} text
-      </button>
+      <button onClick={handleClick}>{isVisible ? "Hide" : "Show"} text</button>
     </div>
   );
 }
