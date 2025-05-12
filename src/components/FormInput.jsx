@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import "../App.css";
 
 const initialState = {
   name: "",
@@ -9,7 +10,7 @@ const reducer = (state, action) => {
     case "change":
       return {
         ...state,
-        [action.field]: action.value
+        [action.field]: action.value,
       };
     case "reset":
       return {
@@ -19,29 +20,36 @@ const reducer = (state, action) => {
       return state;
   }
 };
+
 export default function FormInput() {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div>
-      <input
-        type="name"
-        placeholder="Enter your name"
-        value={state.name}
-        onChange={(e) => {
-          dispatch({ type: "change", field: "name", value: e.target.value });
-        }}
-      />
-      <input
-        type="email"
-        placeholder="Enter email"
-        value={state.email}
-        onChange={(e) => {
-          dispatch({ type: "change", field: "email", value: e.target.value });
-        }}
-      />
-      <p>name: {state.name}</p>
-      <p>email: {state.email}</p>
-      <button onClick={() => dispatch({ type: "reset" })}>reset</button>
+    <div className="main-form">
+      <div className="form">
+        <input
+          type="name"
+          placeholder="Enter name"
+          value={state.name}
+          onChange={(e) =>
+            dispatch({ type: "change", field: "name", value: e.target.value })
+          }
+        />
+        <input
+          type="email"
+          placeholder="Enter name"
+          value={state.email}
+          onChange={(e) =>
+            dispatch({ type: "change", field: "email", value: e.target.value })
+          }
+        />
+      </div>
+      <div className="result">
+        <p>Name: {state.name}</p>
+        <p>Email: {state.email}</p>
+      </div>
+      <button className="btn" onClick={() => dispatch({ type: "reset" })}>
+        Clear
+      </button>
     </div>
   );
 }
